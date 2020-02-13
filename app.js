@@ -6,7 +6,7 @@ const loadTitle = () => {
   return fetchData().then(extractedData => {
     const title = extractedData.title;
     const transformedTitle = title.toUpperCase();
-    return transformedTitle;
+    return transformedTitle; 
   });
 };
 
