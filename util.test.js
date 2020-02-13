@@ -1,9 +1,15 @@
- const {printTitle} = require('./util')
+ const {loadTitle} = require('./util')
  
  
 
  test('Should print an uppercase text', () => {
 
-    expect(printTitle()).toBe('DELECTUS AUT AUTMEN');
+   loadTitle().then(title => {
+
+      expect(title).toBe('DELECTUS AUT AUTMEN');
+
+   })
+
+   //  expect(printTitle()).toBe('DELECTUS AUT AUTMEN');
 
  })
