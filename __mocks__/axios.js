@@ -1,6 +1,6 @@
 const get = url => {
 
-    return {data: {title: 'delectus aut autum'}};
+    return Promise.resolve( {data: {title: 'delectus aut autum'}});
 
 };
 
